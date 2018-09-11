@@ -21,13 +21,13 @@ pipeline {
         
         stage ('Deploy to Staging'){
             steps {
-                build job: 'Deploy-to-staging'
+                echo 'hihi'
             }
         }
 
         stage ('Deploy to Production'){
             steps{
-                build job: 'Deploy-to-Prod'
+                echo 'hoho'
             }
         }
     }
